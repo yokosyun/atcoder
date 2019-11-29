@@ -1,4 +1,5 @@
-//https://noss.hatenablog.com/entry/2018/09/23/201902
+//https://atcoder.jp/contests/abc012/tasks/abc012_4
+//ABC012Dãƒã‚¹ã¨é¿ã‘ã‚‰ã‚Œãªã„é‹å‘½
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -20,7 +21,7 @@ d[b][a] = t;
 }
 
 //calc
-REP(k,n)REP(i,n)REP(j,n) d[i][j] = min(d[i][j], d[i][k]+d[k][j]);//for‚Ìk‚ğ“à‘¤‚É“ü‚ê‚Ä‚à‰ñ‚é
+REP(k,n)REP(i,n)REP(j,n) d[i][j] = min(d[i][j], d[i][k]+d[k][j]);//forã®kã‚’å†…å´ã«å…¥ã‚Œã¦ã‚‚å›ã‚‹
 int ans = IINF;
 
 //searching for minmum time to company in worst case
